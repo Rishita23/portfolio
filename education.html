@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RISHITA TYAGI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <h1>logo</h1>
+                </div>
+                
+                <ul>
+                    <li><a href="file:///C:/Users/HP/website/home.html#">Home</a></li>
+                    <li><a href="file:///C:/Users/HP/website/projects.html">Projects</a></li>
+                    <li><a href="file:///C:/Users/HP/website/internships.html">Internships</a></li>
+                    <li class="active"><a href="#">Education</a></li>
+                    <li><a href="file:///C:/Users/HP/website/contact.html">Contact</a></li>
+                </ul>
+          
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'B.TECH')" id="defaultOpen">B.TECH</button>
+                    <button class="tablinks" onclick="openCity(event, 'XII')">XII</button>
+                    <button class="tablinks" onclick="openCity(event, 'X')">X</button>
+                  </div>
+                  
+                  <div id="B.TECH" class="tabcontent">
+                    <h3>B.TECH</h3>
+                    <p> <i>Electronics & Communication Engineering</i> <br> KIET Group of Institutions <br> (affiliated to AKTU) <br> 2018-22</p>
+                  </div>
+                  
+                  <div id="XII" class="tabcontent">
+                    <h3>XII</h3>
+                    <p> <i>Science (PCM)</i> <br> Delhi Public School Ghaziabad <br> (CBSE Board) <br> 2017-18</p> 
+                  </div>
+                  
+                  <div id="X" class="tabcontent">
+                    <h3>X</h3>
+                    <p>Mount Carmel School Muradnagar <br> (ICSE Board) <br> 2015-16</p>
+                  </div>
+                  </div>
+                  </header>
+                  
+
+        <script>
+            function openCity(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  
+}
+tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
+        </script>
+    </body>
+</html>
